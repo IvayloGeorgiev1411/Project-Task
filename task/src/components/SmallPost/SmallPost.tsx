@@ -7,19 +7,28 @@ interface SmallPostProps {
     body: string,
 }
 
-const SmallPost: React.FC<SmallPostProps> = ({title, body}) => {
+const SmallPost: React.FC<SmallPostProps> = ({ title, body }) => {
+
+
     return (
         <div className='small-post-body'>
 
-            <img className='image-section' 
-            src={noAvailablePicture} 
-            alt="No Picture Available" />
+            <img className='image-section'
+                src={noAvailablePicture}
+                alt="No Picture Available" />
 
             <div className='text-section'>
-                <h4>{title}</h4>
-                <p>{body}</p>
+                <div className='title-section'>
+                    <h4>{title}</h4>
+                </div>
+                <div className='content-section'>
+                    <p>{body}</p>
+                </div>
             </div>
-            
+
+            <div className='button-section'>
+                <button>Read More &#10132;</button>
+            </div>
         </div>
     )
 }

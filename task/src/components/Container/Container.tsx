@@ -1,8 +1,5 @@
+import { ContainerProps } from '../../common/types'
 import './Container.css'
-
-interface ContainerProps {
-    children: React.ReactNode
-}
 
 const Container: React.FC<ContainerProps> = ({ children }) => {
     return (

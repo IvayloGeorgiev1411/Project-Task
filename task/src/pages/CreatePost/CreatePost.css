@@ -1,0 +1,80 @@
+#create-page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+hr {
+    width: 80%;
+}
+
+#create-input {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.input-field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.input-field > input[type="text"] {
+    width: 100%;
+    height: 32px;
+    padding: 8px;
+    border: 1px solid aliceblue;
+    border-radius: 4px;
+    background-color: transparent;
+    color: aliceblue;
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 16px;
+}
+
+.input-field > input[type="text"]::placeholder {
+    color: #a3bdd3
+}
+
+.input-field > textarea {
+    width: 100%;
+    height: 100px;
+    padding: 8px;
+    border: 1px solid aliceblue;
+    border-radius: 4px;
+    background-color: transparent;
+    color: aliceblue;
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 16px;
+}
+
+.input-field > textarea::placeholder {
+    color: #a3bdd3;
+}
+
+.input-field > label {
+    color: aliceblue;
+    font-size: 18px;
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: 700;
+}
+
+#create-button {
+    border-radius: 8px;
+    padding: 10px 16px;
+    background-color: #255091;
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 8px;
+}
+
+#create-button:hover {
+    background-color: #4e8acf;
+}
