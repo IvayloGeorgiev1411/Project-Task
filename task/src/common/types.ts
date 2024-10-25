@@ -11,6 +11,12 @@ export interface Post {
     body: string,
 }
 
+export interface SmallPostProps {
+    id: number,
+    title: string,
+    body: string,
+}
+
 export interface ContainerProps {
     children: React.ReactNode
 }

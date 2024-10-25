@@ -1,14 +1,12 @@
+import { NavigateFunction, useNavigate } from 'react-router-dom';
 import { noAvailablePicture } from '../../common/common';
 import './SmallPost.css';
+import { SmallPostProps } from '../../common/types';
 
 
-interface SmallPostProps {
-    title: string,
-    body: string,
-}
+const SmallPost: React.FC<SmallPostProps> = ({ id, title, body }) => {
 
-const SmallPost: React.FC<SmallPostProps> = ({ title, body }) => {
-
+    const navigate: NavigateFunction = useNavigate();
 
     return (
         <div className='small-post-body'>
@@ -27,7 +25,7 @@ const SmallPost: React.FC<SmallPostProps> = ({ title, body }) => {
             </div>
 
             <div className='button-section'>
-                <button>Read More &#10132;</button>
+                <button onClick={() => navigate(`/post/${id}`)}>Read More &#10132;</button>
             </div>
         </div>
     )

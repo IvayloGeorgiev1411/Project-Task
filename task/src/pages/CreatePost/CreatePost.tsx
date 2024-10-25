@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './CreatePost.css';
 import { newPost } from '../../common/types';
+import { createPost } from '../../services/services';
 
 
 export const CreatePost = () => {
@@ -10,6 +11,24 @@ export const CreatePost = () => {
         body: '',
         userId: '',
     });
+
+    const handleCreatePost = async (): Promise<void> => {
+
+        if(post.title === '' || post.body === '' || post.userId === '') {
+            throw new Error('All fields are required');
+        }
+
+        if(isNaN(Number(post.userId))) {
+            throw new Error('User ID must be a number');
+        }
+
+        try {
+            const data = await createPost(post);
+            console.log(data);
+        } catch (error) {
+            console.error(error);
+        }
+    }
 
     return (
         <div id="create-page">
@@ -42,7 +61,7 @@ export const CreatePost = () => {
                 </div>
             </div>
 
-            <button id='create-button'>Create Post</button>
+            <button id='create-button' onClick={handleCreatePost}>Create Post</button>
         </div>
     )
 }
