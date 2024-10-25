@@ -1,0 +1,33 @@
+.small-post-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #326eaa;
+    gap: 10px;
+}
+
+.image-section {
+    width: 100%;
+    object-fit: cover;
+}
+
+.text-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+}
+
+.text-section > h4 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.text-section > p {
+    margin: 0;
+    font-size: 16px;
+}

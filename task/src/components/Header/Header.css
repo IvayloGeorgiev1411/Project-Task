@@ -1,0 +1,32 @@
+#header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+    width: 100%;
+    margin-bottom: 24px;
+    background-color: #255091;
+}
+
+h2 {
+    margin-left: 32px;
+    font-size: 24px;
+}
+
+#nav-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 32px;
+}
+
+.nav-link {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    color: aliceblue;
+}
