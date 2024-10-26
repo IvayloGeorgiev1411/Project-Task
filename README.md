@@ -6,7 +6,7 @@ This project is a React application built with TypeScript, which interacts with 
 
 - **View Latest Posts**: Fetches and displays the latest 20 posts from the JSONPlaceholder API.
 - **Post Details**: Click on any post to view a detailed version with full content.
-- **Create New Post**: Users can create and submit new posts, which are sent to the API, but not visualized as the API only returns a "fake" response, which does not update the database.
+- **Create New Post**: Users can create and submit new posts, which are sent to the API, but not visualized as the API only returns a "fake" response, which does not update the database.(Could be seen as a console log)
 
 ## Tech Stack
 
