@@ -21,7 +21,7 @@ This project is a React application built with TypeScript, which interacts with 
 
    ```bash
    git clone https://github.com/IvayloGeorgiev1411/Project-Task.git
-   cd <Project-Task>
+   cd <task>
    ```
 
 2. **Install dependencies**
