@@ -20,3 +20,8 @@ export interface SmallPostProps {
 export interface ContainerProps {
     children: React.ReactNode
 }
+
+export interface PostsGrid {
+    posts: Post[],
+    filterQuery: string,
+}

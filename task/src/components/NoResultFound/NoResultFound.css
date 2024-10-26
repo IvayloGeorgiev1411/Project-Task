@@ -1,0 +1,13 @@
+#no-results-div {
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#no-results-div > h3 {
+    font-size: 48px;
+    color: aliceblue;
+    margin: 0;
+}

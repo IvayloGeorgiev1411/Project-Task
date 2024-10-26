@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom"
 import { Post } from "../../common/types";
 import { getPost } from "../../services/services";
 import './DetailedPost.css'
+import Loading from "../../components/Loading/Loading";
 
 export const DetailedPost: React.FC = () => {
 
@@ -29,11 +30,7 @@ export const DetailedPost: React.FC = () => {
     }, [])
 
     if (loading) {
-        return (
-            <div className="loading-div">
-                <h2>Loading...</h2>
-            </div>
-        )
+        return <Loading />
     }
 
     return (

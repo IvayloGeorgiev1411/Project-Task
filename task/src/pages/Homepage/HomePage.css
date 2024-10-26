@@ -5,23 +5,16 @@
     justify-content: center;
 }
 
-h3 {
-    align-self: flex-start;
-    font-size: 32px;
-}
-
-#posts-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    width: 100%;
-    gap: 20px;
-}
-
 #heading-filter {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+}
+
+#heading-filter > h3 {
+    align-self: flex-start;
+    font-size: 32px;
 }
 
 #filter-user {
